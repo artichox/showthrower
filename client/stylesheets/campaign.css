@@ -1,0 +1,132 @@
+body{
+}
+
+h6 {
+	text-transform: lowercase;
+}
+
+.content {
+	padding: 80px 0;
+	width: 480px;
+	margin: 0 auto;
+}
+
+.content-container {
+	margin: 5px 0;
+	padding: 20px;
+	width:100%;
+
+	border-radius: 6px;
+	margin-bottom: 40px;
+	border: 1px solid #d9d9de;
+	background-color: white;
+
+	display: block;
+}
+
+.bandname {
+	font-size: 40pt;
+}
+
+.date {
+	font-size: 25pt;
+}
+
+.venue {
+	float: right;
+	font-size: 25pt;
+}
+
+#info {
+	padding: 0 5px;
+}
+
+#info a:hover{
+	color: rgba(150,230,230,1);
+}
+
+#info a {
+	color: black;
+}
+
+#nav {
+
+}
+
+#nav a {
+	color: black;
+}
+
+.video-container {
+	width: 430px;
+	height: 250px;
+}
+
+.campaign-info {
+	text-align: center;
+}
+
+.campaign-card {
+	padding: 8px;
+	border: 1px solid #d9d9de;
+	border-radius: 6px;
+	background-color: #f7fafa;
+	margin: 10px;
+}
+
+.campaign-image {
+	width: 100%;
+	border-radius: 6px;
+	margin-bottom: 5px;
+}
+
+.slider {
+	height: 8px;
+	border-radius: 4px;
+	padding: 0;
+	background-color: #d9d9de;
+	margin: 4px 0;
+}
+
+.progress {
+	height: 100%;
+	border-radius: 3px;
+	background-color: rgba(150,230,230,1);
+	left: 0;
+}
+
+.percentage {
+	padding: 0;
+}
+
+@media(min-width:767px) {
+	.content {
+		width: 960px;
+	}
+
+	.campaign-info {
+		padding-left: 20px;
+		display: inline-block;
+		vertical-align: top;
+		text-align: left;
+	}
+
+	.video-container {
+		width: 630px;
+		height: 370px;
+		display: inline-block;
+	}
+}
+
+@media(min-width:768px) {}
+
+@media(min-width:992px) {}
+
+@media(min-width:1200px) {
+ 	
+}
+
+.text-center {
+	text-align: center;
+}
+

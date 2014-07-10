@@ -1,0 +1,17 @@
+<template name='layout'>
+  <div class="bg-gray" id="page-top" data-spy="scroll" data-target=".navbar-custom">
+    
+    <section class="top">
+    {{>navbar}}
+    </section>
+
+    <section class="content">
+      {{> yield region="content"}}
+    </section>
+
+    <section class="top">
+    {{>navbar}}
+    </section>
+
+  </div>
+</template>

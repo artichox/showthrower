@@ -1,0 +1,42 @@
+<template name="navbar">
+  <!-- NAVBAR -->
+  <nav id="nav" class="navbar navbar-custom navbar-fixed-top" role="navigation">
+      <div class="navbar-container">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                  <i class="fa fa-bars"></i>
+              </button>
+              <a class="brand-link" href="showthrower.html">
+                  <span class="navbar-brand color-black pad-left">SHOW</span>
+                  <span class="navbar-brand color-brand">THROWER</span>
+              </a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse navbar-main-collapse color-black">
+              <ul class="nav navbar-nav">
+                  <li>
+                      <a href="{{pathFor 'howitworks'}}">How It Works</a>
+                  </li>
+                  <li>
+                      <a href="{{pathFor 'explore'}}">Explore</a>
+                  </li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                  <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                  <li class="hidden">
+                      <a href="#page-top"></a>
+                  </li>
+                  <li>
+                      <a href="../media/img/signup.html">Sign Up</a>
+                  </li>
+                  <li>
+                      <a href="{{pathFor 'login'}}">Log In</a>
+                  </li>
+              </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container -->
+  </nav>
+</template>

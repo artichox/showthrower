@@ -1,0 +1,49 @@
+/* COLORS */
+
+.color-white {
+	color: white;
+}
+
+.color-black {
+	color: black;
+}
+
+.bg-black {
+	background-color: black;
+}
+
+.color-gray {
+	color: #f7fafa;
+}
+
+.bg-gray {
+	background-color: #f7fafa;
+}
+
+.color-gray-blue {
+	color: #d9d9de;
+}
+
+.color-brand {
+	color: rgba(150,230,230,1);
+}
+
+.color-emrald {
+    color: #2ECC71;
+}
+
+.color-peter-river {
+    color: #3498DB;
+}
+
+.color-nephritis {
+    color: #27AE60;
+}
+
+.color-belize-hole {
+    color: #2980B9;
+}
+
+.color-cool-blue {
+	color: #28c3ab;
+}
