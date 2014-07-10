@@ -3,6 +3,7 @@
     "bootstrap-3": {},
     "font-awesome": {},
     "iron-router": {},
-    "uikit-2": {}
+    "uikit-2": {},
+    "collection-helpers": {}
   }
 }
