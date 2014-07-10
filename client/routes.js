@@ -54,5 +54,12 @@ Router.map(function() {
       'login':{to: 'content'},
     }
   });
+
+  this.route('signup', {
+    path: '/signup',
+    yieldTemplates:{
+      'signup':{to: 'content'},
+    }
+  });
   
 });
