@@ -1,3 +1,30 @@
-<template name='login'>
-  <p>This is where the login page will go</p>
+<template name="login">
+  <div class="content-container container">
+    <form class="form-horizontal" id="login-form" action="action" role="form">
+      <fieldset>
+
+      <!-- Form Name -->
+      <legend>Login</legend>
+
+      <!-- Text input-->
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input id="email" name="email" placeholder="enter email" class="form-control" type="email">
+      </div>
+
+      <!-- Password input-->
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input id="password" name="password" placeholder="password" class="form-control" type="password">      
+      </div>
+
+      <!-- Button -->
+      <div class="form-group">
+        <button id="login-button" name="login" class="btn btn-primary">Log In</button>
+        <a href="{{pathFor 'signup'}}" name="signup" class="btn btn-default">Sign Up</a>
+      </div>
+
+      </fieldset>
+    </form>
+  </div>
 </template>
