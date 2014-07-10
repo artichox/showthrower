@@ -6,7 +6,7 @@
 standard-app-packages
 autopublish
 insecure
-<<<<<<< HEAD
+font-awesome
+less
+iron-router
 bootstrap-3
-=======
->>>>>>> e841908d4fb817341559d129c20527bf6115833b
