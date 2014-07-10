@@ -2,6 +2,7 @@ Template.login.events({
   'click #login-button' : function(){
     e.preventDefault();
 
+    console.log("Im in!")
     // retrieve the input field values    
     var email = t.find('#email').value;
     var password = t.find('#password').value;
