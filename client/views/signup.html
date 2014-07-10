@@ -1,6 +1,6 @@
 <template name="signup">
   <div class="content-container container">
-    <form class="form-horizontal" id="signup-form" action="action" role="form">
+    <form class="form-horizontal" id="signup_form" action="action" role="form">
       <fieldset>
 
       <!-- Form Name -->
@@ -25,9 +25,15 @@
         <input id="confirm_password" name="confirm_password" placeholder="confirm password" class="form-control" type="password">
       </div>
 
+      <!-- Confirm Password input-->
+      <div class="form-group">
+        <label for="zip_code">Zip Code</label>
+        <input id="zip_code" name="zip_code" placeholder="Please enter your zip code" class="form-control" type="text">
+      </div>
+
       <!-- Button -->
       <div class="form-group">
-        <a id="signup-button" class="form-control btn btn-default">Do it</a>
+        <a id="signup_button" class="form-control btn btn-default">Do it</a>
       </div>
 
       </fieldset>
