@@ -4,8 +4,23 @@ Template.signup.events({
 
     var password = t.find('#password').value,
       confirm = t.find('#confirm_password').value,
-      email = t.find('#email').value,
-      zip = t.find('#zip_code').value;
+      username = t.find('#username').value,
+      zip = t.find('#zip_code').value,
+      email = t.find('#email').value;
+
+    //Trim input
+    email.trim()
+    password.trim()
+    zip.trim()
+    username.trim()
+
+    //Verify Inputs
+
+    if(username == null || username == "" ){
+      Session.set("alert_level", 'warning');
+      Session.set("info_message", "Please enter a valid username");
+      return;
+    }
 
     if(email == null || email == "" ){
       Session.set("alert_level", 'warning');
@@ -32,21 +47,22 @@ Template.signup.events({
     }
 
     Accounts.createUser({
-        username:email, 
+        username:username, 
         password:password, 
         profile: {
-          zip_code: zip
+          zip_code: zip,
+          email:email
         }
 
       }, function(err){
         if(err){
           Session.set("alert_level", 'danger');
-          Session.set("infoMessage", "Oh dear! It appears there was a problem creating your account..." + err); 
+          Session.set("info_message", "Oh dear! It appears there was a problem creating your account..." + err); 
           return
         }
         else{
           Session.set("alert_level", 'success');
-          Session.set("infoMessage", "Welcome to ShowThrower!");
+          Session.set("info_message", "Welcome to ShowThrower!");
           
           Router.go("/explore")
         }
