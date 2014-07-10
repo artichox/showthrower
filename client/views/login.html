@@ -1,6 +1,6 @@
 <template name="login">
   <div class="content-container container">
-    <form class="form-horizontal" id="login-form" role="form">
+    <form class="form-horizontal" id="login-form" action="action" role="form">
       <fieldset>
 
       <!-- Form Name -->
@@ -20,7 +20,7 @@
 
       <!-- Button -->
       <div class="form-group">
-        <button id="login-button" name="login" class="btn btn-primary">Log In</button>
+        <a id="login-button" name="login" class="btn btn-primary">Log In</a>
         <a href="{{pathFor 'signup'}}" name="signup" class="btn btn-default">Sign Up</a>
       </div>
 

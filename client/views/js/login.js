@@ -1,8 +1,7 @@
 Template.login.events({
-  'click #login-button' : function(){
+  'click #login-button' : function(e, t){
     e.preventDefault();
 
-    console.log("Im in!")
     // retrieve the input field values    
     var email = t.find('#email').value;
     var password = t.find('#password').value;
@@ -24,7 +23,7 @@ Template.login.events({
 
     Meteor.loginWithPassword(email, password, function(err){
       if (err){
-        console.log("error!");
+        console.log("error! ", err);
         Session.set("alert_level", 'warning');
         Session.set("info_message", "Hmmm... there appears to have been a problem logging in: "+ err);
       }

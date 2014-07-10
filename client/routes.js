@@ -61,5 +61,9 @@ Router.map(function() {
       'signup':{to: 'content'},
     }
   });
+
+  this.route('logout', {
+    path: '/logout'
+  })
   
 });

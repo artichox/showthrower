@@ -31,7 +31,11 @@
                       <a href="{{pathFor 'signup'}}">Sign Up</a>
                   </li>
                   <li>
+                    {{#if currentUser}}
+                      <a href="{{pathFor 'logout'}}">Log Out</a>
+                    {{else}}
                       <a href="{{pathFor 'login'}}">Log In</a>
+                    {{/if}}
                   </li>
               </ul>
           </div>
