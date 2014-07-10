@@ -42,6 +42,7 @@ Router.map(function() {
 
   this.route('howitworks', {
     path: '/howitworks',
+    layoutTemplate: 'homelayout',
     yieldTemplates:{
       'howitworks':{to: 'content'},
     }
