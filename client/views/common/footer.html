@@ -5,7 +5,11 @@
           <a class="footer-link" href="{{pathFor 'howitworks'}}">How It Works</a>
           <a class="footer-link" href="{{pathFor 'explore'}}">Explore</a>
           <a class="footer-link" href="{{pathFor 'signup'}}">Sign Up</a>
-          <a class="footer-link" href="{{pathFor 'login'}}">Log In</a>
+          {{if currentUser}}
+            <a class="footer-link" href="{{pathFor 'logout'}}">Log Out</a>
+          {{else}}
+            <a class="footer-link" href="{{pathFor 'login'}}">Log In</a>
+          {{/if}}
       </div>
   </div>
 </template>
