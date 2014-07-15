@@ -8,8 +8,8 @@
 
       <!-- Show Title input-->
       <div class="form-group">
-        <label for="title">Title of the Show</label>
-        <input id="title" name="title" placeholder="" class="form-control" type="text">
+        <label for="show_title">Title of the Show</label>
+        <input id="show_title" name="show_title" placeholder="please enter a title for your campaign" class="form-control" type="text">
       </div>
 
       <!-- Artist input-->
@@ -21,19 +21,34 @@
       <!-- Venue input-->
       <div class="form-group">
         <label for="venue">Venue</label>
-        <input id="venut" name="venue" placeholder="please enter the name of a venue" class="form-control" type="text">      
+        <input id="venue" name="venue" placeholder="please enter the name of a venue" class="form-control" type="text">      
       </div>
 
-      <!-- Artist input-->
+      <!-- Date to throw the show input-->
+      <div class="form-group input-append date" id="date_to_throw" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
+        
+        <label for="date_to_throw">Date of the show</label>
+        
+        <input class="span2" size="" type="text" value="12-02-2012" readonly>
+        <span class="add-on"><i class="icon-calendar"></i></span>
+
+      </div>
+
+      <!-- Image -->
       <div class="form-group">
-        <label for="date">Date to throw the show</label>
-        <input id="artist" name="artist" placeholder="" class="form-control" type="text">      
+        <label for="image">Image for Campaign</label>
+        <input id="image" name="image" placeholder="An image url for the campaign" class="form-control" type="text">
+      </div>
+
+      <!-- Video -->
+      <div class="form-group">
+        <label for="video">Video for Campaign Page</label>
+        <input id="video" name="video" placeholder="A video url for the campaign page" class="form-control" type="text">
       </div>
 
       <!-- Button -->
       <div class="form-group">
-        <a id="login-button" name="login" class="btn btn-primary">Log In</a>
-        <a href="{{pathFor 'signup'}}" name="signup" class="btn btn-default">Sign Up</a>
+        <a id="submit-button" name="submit" class="btn btn-primary">Start Campaign</a>
       </div>
 
       </fieldset>

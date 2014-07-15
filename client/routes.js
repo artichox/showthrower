@@ -48,6 +48,13 @@ Router.map(function() {
     }
   });
 
+  this.route('createcampaign', {
+    path: '/createcampaign',
+    yieldTemplates:{
+      'createcampaign':{to: 'content'},
+    }
+  });
+
   this.route('login', {
     path: '/login',
     yieldTemplates:{
