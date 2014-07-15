@@ -6,7 +6,9 @@
       "font-awesome": {},
       "iron-router": {},
       "uikit-2": {},
-      "collection-helpers": {}
+      "collection-helpers": {},
+      "simple-schema": {},
+      "bootstrap-datepicker": {}
     },
     "packages": {
       "bootstrap-3": {
@@ -31,8 +33,18 @@
       },
       "collection-helpers": {
         "git": "https://github.com/dburles/meteor-collection-helpers.git",
-        "tag": "v0.2.9",
-        "commit": "912be6d15a59b9ee4519bf73000be70dd141b655"
+        "tag": "v0.3.0",
+        "commit": "842bd9343b19c0e45ae20ac9c63c8c356889959a"
+      },
+      "simple-schema": {
+        "git": "https://github.com/aldeed/meteor-simple-schema.git",
+        "tag": "v0.5.1",
+        "commit": "a29956b34d03a4591dbd0eaed9d37009ef48b8db"
+      },
+      "bootstrap-datepicker": {
+        "git": "https://github.com/acidsound/bootstrap-datepicker.git",
+        "tag": "v0.5.1",
+        "commit": "578d0bad1b5b5120c1abc333e449b8d0256969b4"
       },
       "blaze-layout": {
         "git": "https://github.com/EventedMind/blaze-layout.git",

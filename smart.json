@@ -4,6 +4,8 @@
     "font-awesome": {},
     "iron-router": {},
     "uikit-2": {},
-    "collection-helpers": {}
+    "collection-helpers": {},
+    "simple-schema": {},
+    "bootstrap-datepicker": {}
   }
 }

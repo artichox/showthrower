@@ -1,0 +1,18 @@
+{
+  "campaigns": [
+    {
+      "show_title": "",
+      "artist": "",
+      "venue": ""  ,
+      "links" : "",
+      "date_to_throw" : "",
+      "goal" : "",
+      "video" : "",
+      "image" : "",
+      "date_created" : "",
+      "creator" : "",
+      "pledges" : "",
+      "followers" : "",
+    }
+  ],
+}

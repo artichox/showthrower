@@ -1,0 +1,42 @@
+<template name="createcampaign">
+  <div class="content-container container">
+    <form class="form-horizontal" id="login-form" action="action" role="form">
+      <fieldset>
+
+      <!-- Form Name -->
+      <legend>Create a Campaign</legend>
+
+      <!-- Show Title input-->
+      <div class="form-group">
+        <label for="title">Title of the Show</label>
+        <input id="title" name="title" placeholder="" class="form-control" type="text">
+      </div>
+
+      <!-- Artist input-->
+      <div class="form-group">
+        <label for="artist">Artist</label>
+        <input id="artist" name="artist" placeholder="please enter the name of the artist" class="form-control" type="text">      
+      </div>
+
+      <!-- Venue input-->
+      <div class="form-group">
+        <label for="venue">Venue</label>
+        <input id="venut" name="venue" placeholder="please enter the name of a venue" class="form-control" type="text">      
+      </div>
+
+      <!-- Artist input-->
+      <div class="form-group">
+        <label for="date">Date to throw the show</label>
+        <input id="artist" name="artist" placeholder="" class="form-control" type="text">      
+      </div>
+
+      <!-- Button -->
+      <div class="form-group">
+        <a id="login-button" name="login" class="btn btn-primary">Log In</a>
+        <a href="{{pathFor 'signup'}}" name="signup" class="btn btn-default">Sign Up</a>
+      </div>
+
+      </fieldset>
+    </form>
+  </div>
+</template>
