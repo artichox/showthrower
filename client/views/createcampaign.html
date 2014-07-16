@@ -24,14 +24,23 @@
         <input id="venue" name="venue" placeholder="please enter the name of a venue" class="form-control" type="text">      
       </div>
 
-      <!-- Date to throw the show input-->
-      <div class="form-group input-append date" id="date_to_throw" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
+      <!-- Date to throw the show input
+      <div class="form-group"> 
+        <div class="input-append date" id="date_to_throw" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
         
-        <label for="date_to_throw">Date of the show</label>
-        
-        <input class="span2" size="" type="text" value="12-02-2012" readonly>
-        <span class="add-on"><i class="icon-calendar"></i></span>
+          <label for="date_to_throw">Date of the show</label>
+          
+          <input class="span2" size="" type="text" value="12-02-2012" readonly>
+          <span class="add-on"><i class="icon-calendar"></i></span>
+        </div>
 
+      </div>
+      -->
+
+      <!-- Date -->
+      <div class="form-group">
+        <label for="date_to_throw">Proposed date for the show</label>
+        <input id="date_to_throw" name="date_to_throw" placeholder="mm/dd/yyyy" class="form-control" type="text">
       </div>
 
       <!-- Image -->
