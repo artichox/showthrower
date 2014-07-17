@@ -31,9 +31,16 @@ Router.map(function() {
   });
 
   this.route('campaign', {
-    path: '/campaign',
+    path: '/campaign/:_id',
     yieldTemplates:{
       'campaign':{to: 'content'},
+    },
+    data: function() {
+      var campaign = Campaigns.findOne({_id: this.params._id});
+      if (!isDefined(campaign)) 
+        return {};
+      else
+        return campaign;
     }
   });
 

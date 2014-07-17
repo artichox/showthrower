@@ -17,9 +17,9 @@
 </template>    
 
 <template name="campaign_card">
-    <div class="campaign-card col-xs-8 col-xs-offset-2 col-sm-offset-0 col-sm-4" href="campaign.html">
+    <div class="campaign-card col-xs-8 col-xs-offset-2 col-sm-offset-0 col-sm-4" >
 
-            <a href="campaign.html"><img class="campaign-image" src="{{image}}"></a>
+            <a href="{{pathFor 'campaign' _id=_id}}"><img class="campaign-image" src="{{image}}">   
 
             <h3>{{show_title}}</h3>
             <span class="date-venue">{{date_to_throw}}</span>
@@ -46,7 +46,7 @@
                 <br>
                 <span>days to go</span>
             </div>
-
+            </a> 
         </div>
 </template>
 

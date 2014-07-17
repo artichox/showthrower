@@ -7,10 +7,12 @@
       "date_to_throw":"03/14/2015",
       "goal":20000,
       "image":"http://www.xlr8r.com/files/news/bonobo_6-12-13.jpg",
-      "video":"http://www.youtube.com/watch?v=WF34N4gJAKE",
+      "video":"http://www.youtube.com/embed/WF34N4gJAKE",
       "date_created":"Thu Jul 17 2014 08:46:17 GMT-0700 (PDT)",
       "creator":"Pc43tFPaCEstqeKDu",
-      "funded_so_far" : 10500
+      "funded_so_far" : 10500,
+      "ticket_price" : 10,
+      "description" :"Bonobo is fabulous. Of course you want to watch Bonobo live in Santa Cruz"
     },
 
     {
@@ -20,23 +22,27 @@
       "date_to_throw":"November 10, 2014",
       "goal":25000,
       "image":"../media/img/future-islands.jpeg",
-      "video":"http://www.youtube.com/watch?v=-5Ae-LhMIG0",
+      "video":"http://www.youtube.com/embed/-5Ae-LhMIG0",
       "date_created":"Thu Jul 17 2014 08:46:17 GMT-0700 (PDT)",
       "creator":"Pc43tFPaCEstqeKDu",
-      "funded_so_far" : 9000
+      "funded_so_far" : 9000,
+      "ticket_price" : 20,
+      "description": "Led by crooning frontman Samuel T. Herring, the members of Future Islands started out making electro-pop music together in 2003 while attending East Carolina University's art program. Along with Herring, the initial members of the group were Adam Beeby, William Cashion, J. Gerrit Welmers, and Kymia Nawabi, and they played shows around campus as Art Lord & the Self-Portraits. In 2006, after the band split, Herring, Cashion, and Welmers continued under the name Future Islands and picked up the Kickass bassist Erick Murillo to round out the low end. The band released a few CD-Rs, splits, and cassettes before Murillo moved in a more indie rock direction, and relocated to Baltimore with the encouragement of Dan Deacon. His producer, Chester Endersby Gwazda, recorded Future Islands' debut, Wave Like Home, in 2008, and he continued to work with the band for 2010's In the Fall EP and the full-lengths In Evening Air and 2011's On the Water, which were released by Thrill Jockey. After releasing a couple of singles in 2012, the band remained relatively quiet until the announcement in late 2013 that they had signed with legendary indie label 4AD. Their first album for the label, 2014's Singles, was a streamlined, very accessible synth pop album produced by the prolific Chris Coady. The band caused a bit of a ripple within the indie rock community when their performance of one of the album's highlights, 'Seasons (Waiting on You)' on Late Night with David Letterman left the host dazzled and near speechless. ~ Jason Lymangrover, Rovi"
     },
 
     {
-      "show_title":"Breakbot at the Fox",
+      "show_title":"Breakbot at the Fox Theater",
       "artist":"Breakbot",
       "venue":"The Fox Theater",
       "date_to_throw":"December 25, 2014",
       "goal":40000,
-      "video":"http://www.youtube.com/watch?v=6okxuiiHx2w",
+      "video":"http://www.youtube.com/embed/6okxuiiHx2w",
       "image":"http://www.theuntz.com/media/member/6/3/8/63805/breakbot.jpg",
       "date_created":"Thu Jul 18 2014 08:46:17 GMT-0700 (PDT)",
       "creator":"Pc43tFPaCEstqeKDu",
-      "funded_so_far" : 100
+      "funded_so_far" : 100,
+      "ticket_price" : 30,
+      "description" : "Breakbot in Oakland at the Fox. Totally awesome. Do it. "
     }
   ]
 }

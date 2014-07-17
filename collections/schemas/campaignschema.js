@@ -52,6 +52,14 @@ CampaignSchema = new SimpleSchema({
     funded_so_far: {
         type: Number,
         optional: false
+    },
+    description: {          //This is a summary/description of the campaign
+        type: String, 
+        optional:true
+    },
+    ticket_price: {
+        type: Number,
+        optional:true
     }
 });
 
@@ -65,4 +73,11 @@ Campaigns.helpers({
     percent_funded: function(){
         return 55;
     },
+
+    num_backers: function(){
+        if(!isDefined(this.pledges))
+            return 0;
+        
+        return this.pledges.length;
+    }
 })

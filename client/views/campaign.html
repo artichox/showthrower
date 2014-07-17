@@ -1,42 +1,39 @@
 <template name="campaign">
     <section id="info">
-        <a class="bandname color-brand" href="#">Future Islands</a>
+        <a class="bandname color-brand" href="#">{{show_title}}</a>
         <br>
-        <a class="venue color-brand" href="#">Frost Amphitheatre</a>
-        <a class="date color-brand" href="#">November 10, 2014</a>
+        <a class="venue color-brand" href="#">{{venue}}</a>
+        <a class="date color-brand" href="#">{{date_to_throw        }}</a>
     </section>
 
     <section class="content-container container">
 
         <!-- FEATURED VIDEO -->
 
-        <iframe src="http://www.youtube.com/embed/1Ee4bfu_t3c" class="video-container" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <iframe src="{{video}}" class="video-container" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
         <div class="campaign-info">
-            <h1>115</h1>
+            <h1>{{num_backers}}</h1>
             <h5>backers</h5>
-            <h1>$1,150</h1>
-            <h5>pledged of $2,000 goal</h5>
-            <h1>21</h1>
+            <h1>{{pledged_so_far}}</h1>
+            <h5>pledged of ${{goal}} goal</h5>
+            <h1>{{days_to_go}}</h1>
             <h5>days to go</h5>
             <a href="#">
-                <h1>$10</h1>
+                <h1>{{ticket_price}}</h1>
                 <h5>tickets</h5>
             </a>
         </div>
 
         <!-- SHOULD INCLUDE RELATED ARTISTS ETC -->
         <div id="artist-info" class="col-xs-12">
-            <p class="color-black">Led by crooning frontman Samuel T. Herring, the members of Future Islands started out making electro-pop music together in 2003 while attending East Carolina University's art program. Along with Herring, the initial members of the group were Adam Beeby, William Cashion, J. Gerrit Welmers, and Kymia Nawabi, and they played shows around campus as Art Lord & the Self-Portraits. In 2006, after the band split, Herring, Cashion, and Welmers continued under the name Future Islands and picked up the Kickass bassist Erick Murillo to round out the low end. The band released a few CD-Rs, splits, and cassettes before Murillo moved in a more indie rock direction, and relocated to Baltimore with the encouragement of Dan Deacon. His producer, Chester Endersby Gwazda, recorded Future Islands' debut, Wave Like Home, in 2008, and he continued to work with the band for 2010's In the Fall EP and the full-lengths In Evening Air and 2011's On the Water, which were released by Thrill Jockey. After releasing a couple of singles in 2012, the band remained relatively quiet until the announcement in late 2013 that they had signed with legendary indie label 4AD. Their first album for the label, 2014's Singles, was a streamlined, very accessible synth pop album produced by the prolific Chris Coady. The band caused a bit of a ripple within the indie rock community when their performance of one of the album's highlights, "Seasons (Waiting on You)" on Late Night with David Letterman left the host dazzled and near speechless. ~ Jason Lymangrover, Rovi</p>
+            <p class="color-black">{{description}}</p>
         </div>
 
         <div id="venue-info" class="col-xs-12">
-
         </div>
-
-
-
     </section>
 </template>
+
         
 
