@@ -1,5 +1,4 @@
 Deps.autorun(function () {
-
   // Whenever this session variable changes, run this function.
   var message = Session.get('info_message');
   var alert_level = Session.get("alert_level");

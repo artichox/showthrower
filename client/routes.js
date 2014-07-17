@@ -1,5 +1,9 @@
 
-/**----------------------- CONFIGURATIONS ---------------------- **/
+/**----------------------- HOOKS ----------------------------- **/
+
+Router.onBeforeAction(requireLogin, {except: ['passwordrecovery', 'signup', 'login', 'home', 'explore', 'howitworks', 'loading']});
+
+/**----------------------- CONFIGURATIONS ------------------- **/
 
 Router.configure({
    layoutTemplate: 'layout',  //can be any template name
@@ -7,7 +11,7 @@ Router.configure({
 });
 
 
-/**----------------------- ROUTES ---------------------- **/
+/**----------------------- ROUTES -------------------------- **/
 
 Router.map(function() { 
 
@@ -62,6 +66,13 @@ Router.map(function() {
     }
   });
 
+  this.route('profile', {
+    path: '/userprofile',
+    yieldTemplates:{
+      'userprofile':{to: 'content'},
+    }
+  });
+
   this.route('signup', {
     path: '/signup',
     yieldTemplates:{
@@ -77,17 +88,3 @@ Router.map(function() {
   })
   
 });
-
-var logout = function(pause){
-  Session.set("alert_level", "success")
-  Session.set("info_message", "See you later!")
-  console.log("made it into the logout function")
-  
-  Meteor.logout(function(err){
-    if(err)
-      console.log("There was an error logging out : " , err);
-    else{
-      Router.go('home')
-    }
-  })
-}

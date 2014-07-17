@@ -1,18 +1,26 @@
 {
   "campaigns": [
     {
-      "show_title": "",
-      "artist": "",
-      "venue": ""  ,
-      "links" : "",
-      "date_to_throw" : "",
-      "goal" : "",
-      "video" : "",
-      "image" : "",
-      "date_created" : "",
-      "creator" : "",
-      "pledges" : "",
-      "followers" : "",
+      "show_title":"Bonobo Live",
+      "artist":"Bonobo",
+      "venue":"The Catalyst, Santa Cruz, CA",
+      "date_to_throw":"03/14/2015",
+      "goal":20000,
+      "image":"http://www.xlr8r.com/files/news/bonobo_6-12-13.jpg",
+      "video":"http://www.youtube.com/watch?v=WF34N4gJAKE",
+      "date_created":"Thu Jul 17 2014 08:46:17 GMT-0700 (PDT)",
+      "creator":"Pc43tFPaCEstqeKDu"
+    },
+
+    {
+      "show_title":"Future Islands",
+      "artist":"Future Islands",
+      "venue":"Frost Amphitheatre",
+      "date_to_throw":"November 10, 2014",
+      "goal":20000,
+      "image":"../media/img/future-islands.jpeg",
+      "date_created":"Thu Jul 17 2014 08:46:17 GMT-0700 (PDT)",
+      "creator":"Pc43tFPaCEstqeKDu"
     }
   ],
 }
