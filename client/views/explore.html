@@ -1,6 +1,6 @@
 <template name="explore">
     <section id="info">
-        <h2 class="bandname text-center" href="#">Shows Near {{zipCode}}</h2>
+        <h2 class="bandname text-center" href="#">Shows Near {{userLocation}}</h2>
         <br>
     </section>
 
@@ -21,8 +21,8 @@
 
             <a href="{{pathFor 'campaign' _id=_id}}"><img class="campaign-image" src="{{image}}">   
 
-            <h3>{{show_title}}</h3>
-            <span class="date-venue">{{date_to_throw}}</span>
+            <h3>{{showTitle}}</h3>
+            <span class="date-venue">{{dateToThrow}}</span>
             <span class="date-venue">{{venue}}</span>
 
             <div class="slider col-xs-12">
@@ -30,19 +30,19 @@
             </div>
 
             <div class="percentage col-xs-3">
-                <strong>{{percent_funded}}%</strong>
+                <strong>{{percentFunded}}%</strong>
                 <br>
                 <span>funded</span>
             </div>
 
             <div class="funded col-xs-4">
-                <strong>{{funded_so_far}}</strong>
+                <strong>{{fundedSoFar}}</strong>
                 <br>
                 <span>pledged</span>
             </div>
 
             <div class="to-go col-xs-5">
-                <strong>{{days_to_go}}</strong>
+                <strong>{{daysToGo}}</strong>
                 <br>
                 <span>days to go</span>
             </div>

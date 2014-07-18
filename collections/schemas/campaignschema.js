@@ -65,19 +65,4 @@ CampaignSchema = new SimpleSchema({
 
 Campaigns.attachSchema(CampaignSchema);
 
-Campaigns.helpers({
-    days_to_go: function(){
-        return 21;
-    },
 
-    percent_funded: function(){
-        return 55;
-    },
-
-    num_backers: function(){
-        if(!isDefined(this.pledges))
-            return 0;
-        
-        return this.pledges.length;
-    }
-})
