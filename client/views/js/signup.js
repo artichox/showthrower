@@ -51,9 +51,7 @@ Template.signup.events({
         password:password, 
         profile: {
           zip_code: zip,
-          email:email,
-          pledges: [],
-          following: []
+          email:email
         }
 
       }, function(err){
