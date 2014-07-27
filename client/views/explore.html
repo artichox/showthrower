@@ -42,9 +42,11 @@
             </div>
 
             <div class="to-go col-xs-5">
-                <strong>{{daysToGo}}</strong>
-                <br>
-                <span>days to go</span>
+                {{#with timeLeft}}
+                    <strong>{{number}}</strong>
+                    <br>
+                    <span>{{unit}} to go</span>
+                {{/with}}
             </div>
             </a> 
         </div>
