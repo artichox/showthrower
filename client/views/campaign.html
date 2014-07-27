@@ -29,8 +29,10 @@
             <h5>backers</h5>
             <h1>{{pledgedSoFar}}</h1>
             <h5>pledged of ${{goal}} goal</h5>
-            <h1>{{daysToGo}}</h1>
-            <h5>days to go</h5>
+            {{#with timeLeft}}
+                <h1>{{number}}</h1>
+                <h5>{{unit}} to go</h5>
+            {{/with}}
             <a href="#">
                 <h1>{{ticket_price}}</h1>
                 <h5>tickets</h5>

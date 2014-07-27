@@ -8,7 +8,6 @@
       "uikit-2": {},
       "collection-helpers": {},
       "simple-schema": {},
-      "bootstrap-datepicker": {},
       "collection2": {},
       "moment": {},
       "jquery-ui": {},
@@ -44,11 +43,6 @@
         "git": "https://github.com/aldeed/meteor-simple-schema.git",
         "tag": "v0.6.0",
         "commit": "418ec496612fb2afc853e342f0d2269b6674a2fe"
-      },
-      "bootstrap-datepicker": {
-        "git": "https://github.com/acidsound/bootstrap-datepicker.git",
-        "tag": "v0.5.1",
-        "commit": "578d0bad1b5b5120c1abc333e449b8d0256969b4"
       },
       "collection2": {
         "git": "https://github.com/aldeed/meteor-collection2.git",

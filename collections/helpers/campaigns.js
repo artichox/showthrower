@@ -1,7 +1,11 @@
 Campaigns.helpers({
 
-    daysToGo: function() {
-        return 21;
+    timeLeft: function() {
+        var timeFromNow = moment(this.date_to_throw).fromNow();
+        var parsed = timeFromNow.split(" ");
+        var number = parsed[1];
+        var unit = parsed[2];
+        return {number: number, unit: unit}; 
     },
 
     percentFunded: function() {
