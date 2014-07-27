@@ -56,6 +56,14 @@ Campaigns.helpers({
             return "";
 
         return "$" + numberWithCommas(this.goal);
+    },
+
+    ticketPrice: function() {
+        if(!isDefined(this.ticket_price))
+            return "";
+
+        else
+            return "$" + this.ticket_price;
     }
 })
 
