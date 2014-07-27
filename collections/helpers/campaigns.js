@@ -15,7 +15,7 @@ Campaigns.helpers({
         if(!isDefined(this.funded_so_far) || !isDefined(this.goal))
             return 0;
 
-        return this.funded_so_far / this.goal;
+        return Math.floor(this.funded_so_far / this.goal * 100);
     },
 
     numBackers: function() {
