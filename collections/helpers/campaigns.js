@@ -1,6 +1,9 @@
 Campaigns.helpers({
 
     timeLeft: function() {
+        if(!isDefined(this.date_to_throw))
+            return {number: 0, unit: "days"};
+
         var timeFromNow = moment(this.date_to_throw).fromNow();
         var parsed = timeFromNow.split(" ");
         var number = parsed[1];
@@ -9,7 +12,10 @@ Campaigns.helpers({
     },
 
     percentFunded: function() {
-        return 55;
+        if(!isDefined(this.funded_so_far) || !isDefined(this.goal))
+            return 0;
+
+        return this.funded_so_far / this.goal;
     },
 
     numBackers: function() {
@@ -20,10 +26,16 @@ Campaigns.helpers({
     },
 
     showTitle: function() {
+        if(!isDefined(this.show_title))
+            return "";
+
         return this.show_title;
     },
 
     dateToThrow: function() {
+        if(!isDefined(this.date_to_throw))
+            return "";
+
         var date = this.date_to_throw;
         var parts = date.split("/");
         var day = parts[1];
@@ -32,8 +44,18 @@ Campaigns.helpers({
         return month + " " + day + ", " + year;
     },
 
-    fundedSoFa: function() {
-        return this.funded_so_far;
+    fundedSoFar: function() {
+        if(!isDefined(this.funded_so_far))
+            return "";
+
+        return "$" + numberWithCommas(this.funded_so_far);
+    },
+
+    getGoal: function() {
+        if(!isDefined(this.goal))
+            return "";
+
+        return "$" + numberWithCommas(this.goal);
     }
 })
 
