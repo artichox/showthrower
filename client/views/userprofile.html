@@ -1,16 +1,15 @@
-<template name="userprofile">
+<template name="userprofilemenu">
 
   <div class="form-group">
     <a id="createcampaign_button" href="{{ pathFor 'createcampaign'}}" class="form-control btn btn-default">Start a Campaign</a>
 
-    <a id="pledges_link" href="{{ pathFor 'createcampaign'}}" class="form-control btn">Pledges</a>
-
+    <a id="pledges_link" href="{{ pathFor 'userpledges' }}" class="form-control btn">Pledges</a>
   </div>
 
 </template>
 
 <template name="user_pledges">
-  {{#with currentUser}}}
+  {{#with currentUser}}
     <ul class="list-group">
       {{#each userPledges}}
         <li class="list-group-item">{{>pledgeCard}}</li>
@@ -20,6 +19,7 @@
 </template>
 
 <template name="pledge_card">
+  <p> PLEDGE CARD</p>
   <div class="campaign-card col-xs-8 col-xs-offset-2 col-sm-offset-0 col-sm-4" >
 
       <a href="{{pathFor 'campaign' _id=_id}}"><img class="campaign-image" src="{{image}}">   

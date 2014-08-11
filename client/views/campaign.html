@@ -1,4 +1,5 @@
 <template name="campaign">
+
     <section id="info">
         <a class="bandname color-brand" href="#">{{show_title}}</a>
         <br>
@@ -11,15 +12,13 @@
         <!-- FEATURED VIDEO -->
         <div class="pledge-buttons">
             <!-- Button -->
-            <form class="form-horizontal" id="login-form" action="action" role="form">
-                <fieldset>
-                    <div class="form-group">
-                        <button id="pledge-button" name="pledge" class="btn btn-primary">Pledge</button>
+            <div class="form-horizontal">
+                <div class="form-group">
+                    <button id="pledge_button" name="pledge" class="btn btn-primary"  data-uk-modal="{target:'#pledge_modal'}">Pledge{{> make_pledge}} </button>
 
-                        <button id="pledge-button" name="pledge" class="btn btn-default">Follow</button>
-                    </div>
-                </fieldset>
-            </form>
+                    <button id="follow_button" name="follow" class="btn btn-default" data-uk-modal="{target: '#follow_modal'}">Follow{{> follow_campaign}}</button>
+                </div>
+            </div>
         </div>
 
         <iframe src="{{video}}" class="video-container" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
@@ -31,11 +30,11 @@
             <h5>pledged of {{getGoal}} goal</h5>
             {{#with timeLeft}}
                 <h1>{{number}}</h1>
-                <h5>{{unit}} to go</h5>
+                
             {{/with}}
             <a href="#">
-                <h1>{{ticket_price}}</h1>
-                <h5>tickets</h5>
+                <h1>{{ticketPrice}}</h1>
+                <h5>per ticket</h5>
             </a>
         </div>
 
@@ -47,6 +46,30 @@
         <div id="venue-info" class="col-xs-12">
         </div>
     </section>
+
+</template>
+
+
+<template name="make_pledge">
+
+    <div id="pledge_modal" class="uk-modal">
+        <div class="uk-modal-dialog">
+            <a class="uk-modal-close uk-close"></a>
+            This is the content to the modal
+        </div>
+    </div>
+
+</template>
+
+<template name="follow_campaign">
+    
+    <div id="follow_modal" class="uk-modal">
+        <div class="uk-modal-dialog">
+            <a class="uk-modal-close uk-close"></a>
+            This is the content to the follow modal
+        </div>
+    </div>
+
 </template>
 
         

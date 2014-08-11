@@ -4,7 +4,7 @@ Pledges.helpers({
     if(!isDefined(this.campaign_id))
       return "";
 
-    var campaign = Campaigns.findOne(_id: this.campaign_id);
+    var campaign = Campaigns.findOne({_id: this.campaign_id});
     
     if(!isDefined(campaign))
       return "";
@@ -16,7 +16,7 @@ Pledges.helpers({
     if(!isDefined(this.num_tickets_pledged))
       return {ticket_price: "", num_tickets: 0};
 
-    var campaign = Campaigns.findOne(_id: this.campaign_id);
+    var campaign = Campaigns.findOne({_id: this.campaign_id});
     
     if(!isDefined(campaign))
       return {ticket_price: "", num_tickets: 0};

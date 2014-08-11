@@ -61,28 +61,40 @@ Router.map(function() {
 
   this.route('createcampaign', {
     path: '/createcampaign',
-    yieldTemplates:{
+    layoutTemplate: 'userprofilelayout',
+    yieldTemplates: {
+      'userprofilemenu':{to: 'menubar'},
       'createcampaign':{to: 'content'},
     }
   });
 
   this.route('login', {
     path: '/login',
-    yieldTemplates:{
+    yieldTemplates: {
       'login':{to: 'content'},
     }
   });
 
   this.route('profile', {
-    path: '/userprofile',
-    yieldTemplates:{
-      'userprofile':{to: 'content'},
+    path: '/profile',
+    layoutTemplate: 'userprofilelayout',
+    yieldTemplates: {
+      'userprofilemenu':{to: 'menubar'},
+    }
+  });
+
+  this.route('userpledges', {
+    path: '/pledges',
+    layoutTemplate: 'userprofilelayout',
+    yieldTemplates: {
+      'userprofilemenu':{to: 'menubar'},
+      'user_pledges':{to: 'content'},
     }
   });
 
   this.route('signup', {
     path: '/signup',
-    yieldTemplates:{
+    yieldTemplates: {
       'signup':{to: 'content'},
     }
   });
