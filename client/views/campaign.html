@@ -30,7 +30,7 @@
             <h5>pledged of {{getGoal}} goal</h5>
             {{#with timeLeft}}
                 <h1>{{number}}</h1>
-                
+                <h5>{{unit}} to go</h5>
             {{/with}}
             <a href="#">
                 <h1>{{ticketPrice}}</h1>
@@ -54,8 +54,25 @@
 
     <div id="pledge_modal" class="uk-modal">
         <div class="uk-modal-dialog">
-            <a class="uk-modal-close uk-close"></a>
-            This is the content to the modal
+            <a class="uk-modal-close uk-close">x</a>
+            <div class='body uk-margin-large'>
+            <form class="uk-form uk-form-horizontal">
+
+                <fieldset data-uk-margin>
+                    <div class='uk-form-row uk-margin-medium-bottom'>
+                        <label class='black'>I would like to pledge  </label>
+                        <input id="numtickets" name="numtickets" placeholder="0" class="uk-form-small uk-margin-right uk-margin-left" size="4" type="text"> 
+                        <label class='black'>  tickets at {{ticketPrice}} each</label>
+                    </div>   
+
+                    <div class='uk-form-row'>
+                        <button id="cancel_pledge" name="cancel_pledge" class="btn btn-default uk-modal-close">Cancel</button>
+
+                        <button id="complete_pledge" name="complete_pledge" class="btn btn-primary">Pledge</button>
+                    </div>          
+                </fieldset> 
+            </form>
+            </div>
         </div>
     </div>
 
@@ -65,8 +82,8 @@
     
     <div id="follow_modal" class="uk-modal">
         <div class="uk-modal-dialog">
-            <a class="uk-modal-close uk-close"></a>
-            This is the content to the follow modal
+            <a class="uk-modal-close uk-close">x</a>
+            Awesome! You're now following this campaign. 
         </div>
     </div>
 

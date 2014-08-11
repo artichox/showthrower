@@ -5,6 +5,10 @@ h6 {
 	text-transform: lowercase;
 }
 
+.black {
+	color: black;
+}
+
 .content {
 	padding: 80px 0;
 	width: 480px;
