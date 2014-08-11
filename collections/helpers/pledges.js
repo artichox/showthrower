@@ -1,6 +1,7 @@
 
 Pledges.helpers({
-  campaignTitle: function(){
+  
+  campaign: function(){
     if(!isDefined(this.campaign_id))
       return "";
 
@@ -9,7 +10,7 @@ Pledges.helpers({
     if(!isDefined(campaign))
       return "";
 
-    return campaign.showTitle();
+    return campaign;
   },
 
   ticketsPledged: function(){

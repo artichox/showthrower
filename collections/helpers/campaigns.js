@@ -14,8 +14,8 @@ Campaigns.helpers({
     percentFunded: function() {
         if(!isDefined(this.funded_so_far) || !isDefined(this.goal))
             return 0;
-
-        return Math.floor(this.funded_so_far / this.goal * 100);
+        console.log(getFundedSoFar(this) );
+        return Math.floor(getFundedSoFar(this) / this.goal * 100);
     },
 
     numBackers: function() {
@@ -45,10 +45,10 @@ Campaigns.helpers({
     },
 
     fundedSoFar: function() {
-        if(!isDefined(this.funded_so_far))
+        if(!isDefined(this.funded_so_far) || !isDefined(this.ticket_price))
             return "";
 
-        return "$" + numberWithCommas(this.funded_so_far);
+        return "$" + getFundedSoFar(this);
     },
 
     getGoal: function() {
@@ -99,4 +99,21 @@ var getMonth = function(number) {
             throw new Error("Invalid month number: ", number);
 
     }
+}
+
+var getFundedSoFar = function(campaign) {
+    if(!isDefined(campaign))
+        return 0;
+
+    var pledges = Pledges.find({campaign_id: campaign._id}).fetch();
+    if(!isDefined(pledges))
+        return 0;
+    else{
+        var funded = 0;
+        for(var i= 0; i < pledges.length; i++) {
+            funded += pledges[i].num_tickets_pledged * campaign.ticket_price;
+        }
+    }   
+
+    return funded;
 }

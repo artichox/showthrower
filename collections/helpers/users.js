@@ -11,6 +11,8 @@ Meteor.users.helpers({
       return [];
 
     var pledges = Pledges.find({user_id: this._id}).fetch();
+    console.log("Finding the user pledges", pledges);
+
     if(!isDefined(pledges))
       return [];
     

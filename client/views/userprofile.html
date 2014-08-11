@@ -4,55 +4,7 @@
     <a id="createcampaign_button" href="{{ pathFor 'createcampaign'}}" class="form-control btn btn-default">Start a Campaign</a>
 
     <a id="pledges_link" href="{{ pathFor 'userpledges' }}" class="form-control btn">Pledges</a>
+
+    <a id="pledges_link" href="{{ pathFor 'userfollowing' }}" class="form-control btn">Following</a>
   </div>
-
-</template>
-
-<template name="user_pledges">
-  {{#with currentUser}}
-    <ul class="list-group">
-      {{#each userPledges}}
-        <li class="list-group-item">{{>pledgeCard}}</li>
-      {{/each}}
-    </ul>
-  {{/with}}
-</template>
-
-<template name="pledge_card">
-  <p> PLEDGE CARD</p>
-  <div class="campaign-card col-xs-8 col-xs-offset-2 col-sm-offset-0 col-sm-4" >
-
-      <a href="{{pathFor 'campaign' _id=_id}}"><img class="campaign-image" src="{{image}}">   
-
-      <h3>{{campaignTitle}}</h3>
-      {{#with ticketsPledged}}
-        <span class="date-venue">Pledged {{num_tickets}}</span>
-        <span class="date-venue">at {{ticket_price}}</span>
-      {{/with}}
-
-      <div class="slider col-xs-12">
-          <div class="progress" style="width: {{percentFunded}}%;"></div>
-      </div>
-
-      <div class="percentage col-xs-3">
-          <strong>{{percentFunded}}%</strong>
-          <br>
-          <span>funded</span>
-      </div>
-
-      <div class="funded col-xs-4">
-          <strong>{{fundedSoFar}}</strong>
-          <br>
-          <span>pledged</span>
-      </div>
-
-      <div class="to-go col-xs-5">
-          {{#with timeLeft}}
-              <strong>{{number}}</strong>
-              <br>
-              <span>{{unit}} to go</span>
-          {{/with}}
-      </div>
-      </a> 
-    </div>
 </template>

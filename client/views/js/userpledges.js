@@ -9,6 +9,6 @@ Template.user_pledges.helpers({
       return "";
 
     var userpledges = Meteor.user().userPledges();  
+    return userpledges;
   }
-
 })
